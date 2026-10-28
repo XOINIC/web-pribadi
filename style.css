@@ -159,8 +159,25 @@ a {
 }
 
 .contact-icon svg {
+    display: block;
     width: 19px;
     height: 19px;
+}
+
+.contact-info {
+    display: grid;
+    gap: 1px;
+}
+
+.contact-info strong {
+    color: #365b58;
+    font-size: 0.84rem;
+}
+
+.contact-info small {
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 400;
 }
 
 .instagram-icon {
@@ -396,6 +413,22 @@ a {
 
 .footer-message span {
     font-size: 0.75rem;
+}
+
+.footer-education {
+    margin-top: 30px;
+}
+
+.education-timeline .timeline-item {
+    padding-bottom: 16px;
+}
+
+.education-timeline .timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.education-timeline .item-copy {
+    font-size: 0.8rem;
 }
 
 .footer-link {
