@@ -131,6 +131,48 @@ a {
     font-size: 0.9rem;
 }
 
+.contact-list {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    background: white;
+    color: #365b58;
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.contact-icon {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    flex: 0 0 auto;
+    place-items: center;
+    border-radius: 9px;
+}
+
+.contact-icon svg {
+    width: 19px;
+    height: 19px;
+}
+
+.instagram-icon {
+    background: #faeaf1;
+    color: #c13584;
+}
+
+.whatsapp-icon {
+    background: #e6f5eb;
+    color: #198c4b;
+}
+
 .skill-list {
     display: flex;
     flex-wrap: wrap;
@@ -311,11 +353,78 @@ a {
 
 .footer {
     margin-top: 38px;
-    padding-top: 18px;
+    padding-top: 24px;
     border-top: 1px solid var(--line);
     color: var(--muted);
     font-size: 0.78rem;
+}
+
+.footer-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px;
+    border: 1px solid #dcebe6;
+    border-radius: 14px;
+    background: linear-gradient(110deg, #f3faf7, #f8fbfa);
+}
+
+.footer-mark {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 auto;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--accent);
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.76rem;
+    font-weight: 800;
+}
+
+.footer-message {
+    display: grid;
+    gap: 2px;
+}
+
+.footer-message strong {
+    color: var(--ink);
+    font-family: "Manrope", sans-serif;
+    font-size: 0.88rem;
+}
+
+.footer-message span {
+    font-size: 0.75rem;
+}
+
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footer-link:hover {
+    color: #11675f;
+}
+
+.footer-credit {
+    margin: 18px 0 0;
     text-align: center;
+}
+
+.footer-credit > span:first-child {
+    color: #d35d73;
+}
+
+.footer-dot {
+    padding: 0 4px;
 }
 
 @media (max-width: 760px) {
@@ -371,6 +480,20 @@ a {
     .item-meta {
         display: inline-block;
         margin-top: 3px;
+    }
+
+    .footer-card {
+        flex-wrap: wrap;
+        gap: 10px 12px;
+    }
+
+    .footer-message {
+        flex: 1;
+    }
+
+    .footer-link {
+        width: 100%;
+        margin-left: 54px;
     }
 }
 
